@@ -1,0 +1,12 @@
+<apex:page controller="CitySelectController" action="{!init}">
+    <apex:form id="form">
+        <apex:selectList value="{!selectedCountry}" size="1" multiselect="false" >
+            <apex:selectOptions value="{!countryPickList}" />
+                <apex:actionSupport event="onchange" action="{!populateCityPickList}" rerender="form" />
+        </apex:selectList>
+        <br />
+        <apex:selectList value="{!selectedCity}" size="1" multiselect="false" >
+            <apex:selectOptions value="{!cityPickList}" />
+        </apex:selectList>
+    </apex:form>
+</apex:page>

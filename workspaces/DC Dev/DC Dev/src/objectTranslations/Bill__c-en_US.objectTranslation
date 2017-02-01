@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bill</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bills</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter the number of copies sold to the buyer. --></help>
+        <label><!-- Copies --></label>
+        <name>Copies__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select customer ID. --></help>
+        <label><!-- Customer Information --></label>
+        <name>Customer_Information__c</name>
+        <relationshipLabel><!-- Bills --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the date of transaction. --></help>
+        <label><!-- Date of Transaction --></label>
+        <name>Date_of_Transaction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the media to be sold. --></help>
+        <label><!-- Media Information --></label>
+        <name>Media_Information__c</name>
+        <relationshipLabel><!-- Bills --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name of Customer --></label>
+        <name>Name_of_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discounted</masterLabel>
+            <translation><!-- Discounted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negotiating</masterLabel>
+            <translation><!-- Negotiating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold</masterLabel>
+            <translation><!-- Sold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This field will calculate the total for the bill automatically --></help>
+        <label><!-- Total --></label>
+        <name>Total__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Mail template to notify employee deactivation to the manager of the same.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Employee Deactivation</name>
+    <style>none</style>
+    <subject>One of your employees is no longer active.</subject>
+    <textOnly>Employee Deactivation Alert
+
+Hello,
+One of your employees has resigned and is no longer active. He has served 60 days in notice period according to the company policy.
+
+The details of the employee are as following:
+
+ID: {!Employee_4__c.Name}
+Name: {!Employee_4__c.Full_Name__c}
+Role: {!Employee_4__c.Role__c}
+Resignation Date: {!Employee_4__c.Resignation_Date__c}
+Last Working Day: {!Employee_4__c.Last_Working_Day__c}
+
+This is an auto-generated mail. Please do not respond.
+
+Thank you.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

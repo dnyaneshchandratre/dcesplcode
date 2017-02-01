@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Brand</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Brands</value>
+    </caseValues>
+    <fields>
+        <help><!-- Provide the name of the brand. --></help>
+        <label><!-- Name of Brand --></label>
+        <name>Name_of_Brand__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts the total number of models of the brand. --></help>
+        <label><!-- Total Models --></label>
+        <name>Total_Models__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Employee</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Employees</value>
+    </caseValues>
+    <fields>
+        <help><!-- Enter the address of the employee. --></help>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates the age of the employee automatically. --></help>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the annual CTC for the employee. --></help>
+        <label><!-- Annual CTC --></label>
+        <name>Annual_CTC__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the city of the employee. --></help>
+        <label><!-- City --></label>
+        <name>City__c</name>
+        <picklistValues>
+            <masterLabel>Bhopal</masterLabel>
+            <translation><!-- Bhopal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gandhi Nagar</masterLabel>
+            <translation><!-- Gandhi Nagar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guntur</masterLabel>
+            <translation><!-- Guntur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyderabad</masterLabel>
+            <translation><!-- Hyderabad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mumbai</masterLabel>
+            <translation><!-- Mumbai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pune</masterLabel>
+            <translation><!-- Pune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surat</masterLabel>
+            <translation><!-- Surat --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check the box true if the employee is a current employee. --></help>
+        <label><!-- Current Employee --></label>
+        <name>Current_Employee__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date of birth of the employee. --></help>
+        <label><!-- Date of Birth --></label>
+        <name>Date_of_Birth__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date when the employee joined the company. --></help>
+        <label><!-- Date of Joining --></label>
+        <name>Date_of_Joining__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate department ID for the employee. --></help>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <relationshipLabel><!-- Employees --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the educational qualification of the fresher employee. --></help>
+        <label><!-- Education --></label>
+        <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>B Sc.</masterLabel>
+            <translation><!-- B Sc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B Tech.</masterLabel>
+            <translation><!-- B Tech. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BCA</masterLabel>
+            <translation><!-- BCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BE</masterLabel>
+            <translation><!-- BE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MCA</masterLabel>
+            <translation><!-- MCA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Enter the first name of the employee. --></help>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Full name of the employee is automatically populated in this field. --></help>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if the employee is active. --></help>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box if the employee is on notice period. --></help>
+        <label><!-- Is on Notice Period --></label>
+        <name>Is_on_Notice_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the last name of the employee. --></help>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This date is automatically calculated based on resignation date. --></help>
+        <label><!-- Last Working Day --></label>
+        <name>Last_Working_Day__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the appropriate manager ID for the employee. --></help>
+        <label><!-- Manager --></label>
+        <name>Manager__c</name>
+        <relationshipLabel><!-- Employees --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter name of second most recent company. --></help>
+        <label><!-- Previous Comapny - 2 --></label>
+        <name>Previous_Comapny_2__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter name of most recent company. --></help>
+        <label><!-- Previous Company - 1 --></label>
+        <name>Previous_Company_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter salary in most recent company. --></help>
+        <label><!-- Previous Salary --></label>
+        <name>Previous_Salary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the date of resignation of the employee. --></help>
+        <label><!-- Resignation Date --></label>
+        <name>Resignation_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide the role of the employee from the lookup. --></help>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <relationshipLabel><!-- Employees --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the social security number of the employee. --></help>
+        <label><!-- SSN --></label>
+        <name>SSN__c</name>
+    </fields>
+    <fields>
+        <help><!-- Automatically calculates total salary credited to the employee till date. --></help>
+        <label><!-- Salary Credited Till Date --></label>
+        <name>Salary_Credited_Till_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the skills possessed by the employee. --></help>
+        <label><!-- Skills --></label>
+        <name>Skills__c</name>
+        <picklistValues>
+            <masterLabel>Apex</masterLabel>
+            <translation><!-- Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C#</masterLabel>
+            <translation><!-- C# --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dot Net</masterLabel>
+            <translation><!-- Dot Net --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Force.com</masterLabel>
+            <translation><!-- Force.com --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR</masterLabel>
+            <translation><!-- HR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Java</masterLabel>
+            <translation><!-- Java --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operations</masterLabel>
+            <translation><!-- Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PHP</masterLabel>
+            <translation><!-- PHP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Management</masterLabel>
+            <translation><!-- Project Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Planning</masterLabel>
+            <translation><!-- Project Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QA</masterLabel>
+            <translation><!-- QA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salesforce</masterLabel>
+            <translation><!-- Salesforce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the state in which employee lives. --></help>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>Andhra Pradesh</masterLabel>
+            <translation><!-- Andhra Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gujarat</masterLabel>
+            <translation><!-- Gujarat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Madhya Pradesh</masterLabel>
+            <translation><!-- Madhya Pradesh --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maharashtra</masterLabel>
+            <translation><!-- Maharashtra --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Red Flag: Inactive.
+Yellow Flag: On notice period.
+Green Flag: Active. --></help>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the street on which the employee lives. --></help>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculates the total experience for the experienced employee. --></help>
+        <label><!-- Total Experience --></label>
+        <name>Total_Experience__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique field for One-to-One relationship. --></help>
+        <label><!-- Unique Role --></label>
+        <name>Unique_Role__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select the experience in years in most recent company. --></help>
+        <label><!-- Years of Experience - 1 --></label>
+        <name>Years_of_Experience_1__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select the experience in years in most recent company. --></help>
+        <label><!-- Years of Experience - 2 --></label>
+        <name>Years_of_Experience_2__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Years of Experience on Salesforce --></label>
+        <name>Years_of_Experience_on_Salesforce__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ZIP --></label>
+        <name>ZIP__c</name>
+    </fields>
+    <layouts>
+        <layout>Experienced Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department Details --></label>
+            <section>Department Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employee Details --></label>
+            <section>Employee Details</section>
+        </sections>
+        <sections>
+            <label><!-- Experience --></label>
+            <section>Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Official Information --></label>
+            <section>Official Information</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Details --></label>
+            <section>Salary Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Freshers Layout</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department Details --></label>
+            <section>Department Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employee Details --></label>
+            <section>Employee Details</section>
+        </sections>
+        <sections>
+            <label><!-- Official Information --></label>
+            <section>Official Information</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Details --></label>
+            <section>Salary Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Non Technical</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department Details --></label>
+            <section>Department Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employee Details --></label>
+            <section>Employee Details</section>
+        </sections>
+        <sections>
+            <label><!-- Experience --></label>
+            <section>Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Official Information --></label>
+            <section>Official Information</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Details --></label>
+            <section>Salary Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Technical</layout>
+        <sections>
+            <label><!-- Address Details --></label>
+            <section>Address Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department Details --></label>
+            <section>Department Details</section>
+        </sections>
+        <sections>
+            <label><!-- Employee Details --></label>
+            <section>Employee Details</section>
+        </sections>
+        <sections>
+            <label><!-- Experience --></label>
+            <section>Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Official Information --></label>
+            <section>Official Information</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Details --></label>
+            <section>Salary Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warehouse</layout>
+        <sections>
+            <label><!-- Address --></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Experience --></label>
+            <section>Experience</section>
+        </sections>
+        <sections>
+            <label><!-- Official Information --></label>
+            <section>Official Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Experienced --></label>
+        <name>Experienced</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Fresher --></label>
+        <name>Fresher</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non-Technical --></label>
+        <name>Non_Technical</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Technical --></label>
+        <name>Technical</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please provide a valid Date of birth. Employee cannot be less than 18 years of Age. --></errorMessage>
+        <name>Age_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Last working day cannot be before resignation date. --></errorMessage>
+        <name>Last_Working_Day</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The employee cannot be inactive in notice period. --></errorMessage>
+        <name>Notice_Period_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Employee cannot resign before joining. --></errorMessage>
+        <name>Resignation_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You need to enter a resignation date. --></errorMessage>
+        <name>Resignation_Date_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;Is on Notice Period&quot; checkbox should be checked in order to enter resignation date. --></errorMessage>
+        <name>Resignation_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid Value in SSN. --></errorMessage>
+        <name>SSN_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

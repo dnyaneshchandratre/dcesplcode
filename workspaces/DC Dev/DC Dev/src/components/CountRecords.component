@@ -1,0 +1,7 @@
+<apex:component controller="ComponentController" rendered="true">
+    <apex:attribute name="list"
+                    description="Displays the total records present on the page."
+                    type="Object[]"
+                    required="true" />
+    <apex:outputText value="Records Count: {!list.size}" />
+</apex:component>

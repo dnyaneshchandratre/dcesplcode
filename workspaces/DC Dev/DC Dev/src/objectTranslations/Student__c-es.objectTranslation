@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Student --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Student --></value>
+    </caseValues>
+    <fields>
+        <label>ciudad</label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label>País</label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label>Curso Aplicado Para</label>
+        <name>Course_Applied_For__c</name>
+        <picklistValues>
+            <masterLabel>B.Arch.</masterLabel>
+            <translation><!-- B.Arch. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B.C.A.</masterLabel>
+            <translation><!-- B.C.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B.E.</masterLabel>
+            <translation><!-- B.E. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M.C.A.</masterLabel>
+            <translation><!-- M.C.A. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>género</label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>HSC %</label>
+        <name>HSC__c</name>
+    </fields>
+    <fields>
+        <label>Número rollo</label>
+        <name>Roll_Number__c</name>
+    </fields>
+    <fields>
+        <label>SSC %</label>
+        <name>SSC__c</name>
+    </fields>
+    <fields>
+        <label>estado</label>
+        <name>State__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Student Name --></nameFieldLabel>
+</CustomObjectTranslation>

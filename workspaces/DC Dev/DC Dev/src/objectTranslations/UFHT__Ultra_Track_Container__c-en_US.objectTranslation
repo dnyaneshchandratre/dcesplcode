@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- DateHolder --></label>
+        <name>UFHT__DateHolder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Tracking Enabled --></label>
+        <name>UFHT__Is_Tracking_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Label --></label>
+        <name>UFHT__Object_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>UFHT__Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracked Fields --></label>
+        <name>UFHT__Tracked_Fields__c</name>
+    </fields>
+</CustomObjectTranslation>

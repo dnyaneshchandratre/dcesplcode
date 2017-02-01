@@ -1,0 +1,73 @@
+<apex:page controller="AccountListController" >
+
+    <apex:image url="{!$Resource.Header_Image}"  
+                width="50" 
+                height="50"/>
+
+    <apex:form title="Accounts">
+        <h1>Account List</h1>
+        <br />
+        <br />
+        <apex:outputpanel >
+            <apex:pageBlock id="list" 
+                            title="List">
+                <apex:inputText id="SearchKey" 
+                                value="{!searchKey}" 
+                                onkeypress="return keypress(event)" />
+                <apex:actionfunction name="search" 
+                                     action="{!searchAccounts}" 
+                                     reRender="showmsg, AccountList" />
+                <apex:commandButton id="searchButton" 
+                                    value="Search" 
+                                    action="{!searchAccounts}" 
+                                    reRender="showmsg, AccountList, countRecords" />
+                <apex:commandLink value="Clear Results" 
+                                  action="{!clearList}" 
+                                  reRender="AccountList, SearchKey, showmsg" />
+                <apex:pageMessages id="showmsg" />
+                <apex:pageblockTable id="AccountList" 
+                                     styleclass="AccountList" 
+                                     value="{!accountList}" 
+                                     var="accountIterator" 
+                                     width="90%">
+                    <apex:column headerValue="Name">
+                        <apex:outputLink value="/{!accountIterator.Id}" >
+                            {!accountIterator.name}
+                        </apex:outputLink>
+                    </apex:column>
+                    <apex:column value="{!accountIterator.website}" 
+                                 headerValue="Website"/>
+                    <apex:column value="{!accountIterator.phone}" 
+                                 headerValue="Phone"/>
+                    <apex:column value="{!accountIterator.Email_Address__c}" 
+                                 headerValue="Email"/>
+                    <apex:column headervalue="Manage">
+                        <apex:commandButton value="Manage Contacts" 
+                                            action="{!redirectToContacts}" 
+                                            reRender="block" >
+                            <apex:param name="aid" 
+                                        value="{!accountIterator.id}" />
+                            <apex:param name="an" 
+                                        value="{!accountIterator.Name}" />
+                        </apex:commandButton>
+                    </apex:column>
+                    <apex:facet name="header" >
+                        <c:CountRecords id="countRecords" list="{!accountList}" />
+                    </apex:facet>
+                </apex:pageblockTable>
+            </apex:pageBlock>
+        </apex:outputpanel>
+    </apex:form>
+
+    <script type='text/javascript'>
+        function keypress(eventInstance) {
+            if (window.event && window.event.keyCode == 13 || eventInstance.which == 13) {
+                search();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+
+</apex:page>

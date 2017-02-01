@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Used to activate or deactivate the validation rules.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Validations__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If it is set to true, none of the validations will fire.</description>
+        <externalId>false</externalId>
+        <label>Validations</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Validation Setting</label>
+    <visibility>Protected</visibility>
+</CustomObject>

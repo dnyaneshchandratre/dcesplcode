@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Salary</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Salaries</value>
+    </caseValues>
+    <fields>
+        <label><!-- Bank Account Number --></label>
+        <name>Bank_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bank Details --></label>
+        <name>Bank_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Basic --></label>
+        <name>Basic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee --></label>
+        <name>Employee__c</name>
+        <relationshipLabel><!-- Salaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gross Salary --></label>
+        <name>Gross_Salary__c</name>
+    </fields>
+    <fields>
+        <label><!-- HRA --></label>
+        <name>HRA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mode of Payment --></label>
+        <name>Mode_of_Payment__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NEFT</masterLabel>
+            <translation><!-- NEFT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RTGS</masterLabel>
+            <translation><!-- RTGS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PF Deduction --></label>
+        <name>PF_Deduction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salary Credit Date --></label>
+        <name>Salary_Credit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Allowance --></label>
+        <name>Special_Allowance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Earnings --></label>
+        <name>Total_Earnings__c</name>
+    </fields>
+    <layouts>
+        <layout>Salary Layout</layout>
+        <sections>
+            <label><!-- Banking Details --></label>
+            <section>Banking Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Payment Details --></label>
+            <section>Payment Details</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Credit Details --></label>
+            <section>Salary Credit Details</section>
+        </sections>
+        <sections>
+            <label><!-- Salary Deduction Details --></label>
+            <section>Salary Deduction Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Bank Account Number cannot be changed once it is set. --></errorMessage>
+        <name>Account_Number_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a valid bank account number. (Length should be 25) --></errorMessage>
+        <name>Account_Number_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Bank Details cannot be Null. --></errorMessage>
+        <name>Bank_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The salary credit date cannot come before Joining Date. --></errorMessage>
+        <name>Salary_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Salary cannot be processed for inactive employees. --></errorMessage>
+        <name>Salary_for_Inactive_Employees</name>
+    </validationRules>
+</CustomObjectTranslation>

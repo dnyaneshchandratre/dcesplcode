@@ -1,0 +1,88 @@
+<apex:page controller="AccountListController" action="{!getSelectedContactsList}">
+    <apex:includeScript value="{!URLFOR($Resource.Javascript, '/JS/DeleteContact.js')}"/>
+    <apex:form title="Account Related Contacts">
+        <h1>Contacts for <i>{!AccountName}</i></h1>
+        <apex:pageBlock >
+            <apex:pageMessages id="message" />
+            <apex:repeat value="{!alphabetList}" 
+                         var="alphabet">
+                <apex:commandLink value="{!alphabet}" action="{!searchByAlphabet}"
+                    reRender="contactList, countRecords" immediate="true" >
+                    <apex:param name="selectedAlphabet" value="{!alphabet}" />
+                </apex:commandLink>
+                &nbsp;|&nbsp;
+            </apex:repeat>
+            <apex:pageBlockTable id="contactList" value="{!selectedContactsList}" 
+                var="relatedContact">
+                <apex:column >
+                    <apex:inputCheckBox value="{!relatedContact.isSelected}" />
+                </apex:column>
+                <apex:column id="Id"
+                    value="{!relatedContact.contactInstance.Id}" headerValue="Id" />
+                <apex:column value="{!relatedContact.contactInstance.Name}" 
+                    headerValue="Name" />
+                <apex:column value="{!relatedContact.contactInstance.Phone}" 
+                    headerValue="Phone" />
+                <apex:column value="{!relatedContact.contactInstance.MobilePhone}" 
+                    headerValue="Mobile Phone" />
+                <apex:column headerValue="Delete this">
+                    <apex:commandLink value="Delete this contact"
+                         onComplete="location.reload();" 
+                         onClick="deleteCon('{!relatedContact.contactInstance.Id}');"
+                         reRender="contactList, message, countRecords" /> 
+                </apex:column>
+            </apex:pageBlockTable>
+            <apex:pageBlockSection >
+                <apex:commandButton action="{!returnToAccount}" value="Return" immediate="true" />
+                <apex:commandButton action="{!deleteMultipleContacts}" value="Delete Multiple"
+                    onComplete="location.reload();" reRender="message, contactList, countRecords" />
+
+                <c:CountRecords id="countRecords" list="{!selectedContactsList}"/>
+
+                <apex:commandButton action="{!renderAddContactPanel}" 
+                                    value="Add Associated Contact" 
+                                    reRender="createNew" />
+
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+    <apex:form >
+        <apex:outputPanel id="createNew">
+            <apex:pageBlock >
+                <apex:pageBlockSection rendered="{!isRendered}">
+                    <apex:inputField value="{!AssociatedContact.FirstName}" />
+                    <apex:inputField value="{!AssociatedContact.LastName}" />
+                    <apex:outputField value="{!AssociatedContact.AccountId}" />
+                    <apex:inputField value="{!AssociatedContact.Email}" />
+                    <apex:inputField value="{!AssociatedContact.Primary__c}" />
+                    <apex:commandButton value="Save" 
+                        action="{!saveContact}" reRender="createNew, contactList, countRecords" />
+                </apex:pageBlockSection>
+            </apex:pageBlock>
+        </apex:outputPanel>
+    </apex:form>
+
+    <script>
+        function deleteCon(Id) {
+            alert(Id);
+            Visualforce.remoting.Manager.invokeAction (
+                '{!$RemoteAction.AccountListController.deleteRelatedContact}',
+                Id,
+                function(result,event) {
+                    if(event.status) {
+                        console.log(event.status);
+                        console.log('result : ', result);
+                        alert("Contact has been deleted!");
+                    } else if(event.type === "exception") {
+                        alert("Exception has occurred! Details : " + event.message);
+                        console.log('result : ', result);
+                    } else {
+                        alert("Some unknown error has occurred! Details : " + event.message);
+                        console.log('result : ', result);
+                    }
+                }
+            );
+        }
+    </script>
+
+</apex:page>

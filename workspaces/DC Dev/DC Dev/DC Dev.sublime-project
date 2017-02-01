@@ -1,0 +1,14 @@
+{
+    "folders": [
+        {
+            "file_exclude_patterns": [
+                "*.*-meta.xml", 
+                "*.sublime-project"
+            ], 
+            "folder_exclude_patterns": [
+                ".templates"
+            ], 
+            "path": "E:\\Study Dev\\Git Tryout\\dcesplcode\\workspaces\\DC Dev/DC Dev"
+        }
+    ]
+}

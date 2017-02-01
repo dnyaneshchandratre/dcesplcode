@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Used to control triggers.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Account_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If it is set to true, the the account trigger would not execute.</description>
+        <externalId>false</externalId>
+        <label>Account Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Case_Update_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If it is set to true, Case Update Trigger will not execute.</description>
+        <externalId>false</externalId>
+        <label>Case Update Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If it is set to true, Contact Trigger will not execute.</description>
+        <externalId>false</externalId>
+        <label>Contact Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Create_Task_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If it is set to true, Create Task Trigger will not execute.</description>
+        <externalId>false</externalId>
+        <label>Create Task Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If it is set to true, Lead Trigger will not execute.</description>
+        <externalId>false</externalId>
+        <label>Lead Trigger</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>TriggerSetting</label>
+    <visibility>Protected</visibility>
+</CustomObject>

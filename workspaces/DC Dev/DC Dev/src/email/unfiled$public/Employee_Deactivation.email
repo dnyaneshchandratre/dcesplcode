@@ -1,0 +1,16 @@
+<center><h2>Employee Deactivation Alert</center></h2>
+<br><br>
+Hello,<br>
+One of your employees has resigned and is no longer active. He has served 60 days in notice period according to the company policy. <br><br>
+
+The details of the employee are as following:<br><br>
+
+ID: {!Employee_4__c.Name}<br>
+Name: {!Employee_4__c.Full_Name__c}<br>
+Role: {!Employee_4__c.Role__c}<br>
+Resignation Date: {!Employee_4__c.Resignation_Date__c}<br>
+Last Working Day: {!Employee_4__c.Last_Working_Day__c}<br><br>
+
+This is an auto-generated mail. Please do not respond.<br><br>
+
+Thank you.

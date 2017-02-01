@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>a@b.com</contactEmail>
+    <label>Akshay Demo</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG9ZL0ppGP5UrA4kbIf5aVMUVISd1COgGBd_mwX4TbUKoBZxeCLqICxiO4aW6H6jydcxEZgHjnAI0keC68B</consumerKey>
+        <scopes>Full</scopes>
+    </oauthConfig>
+</ConnectedApp>

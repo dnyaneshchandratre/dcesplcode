@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>TriggerSetting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>TriggerSetting</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Trigger --></label>
+        <name>Account_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Update Trigger --></label>
+        <name>Case_Update_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Trigger --></label>
+        <name>Contact_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Task Trigger --></label>
+        <name>Create_Task_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Trigger --></label>
+        <name>Lead_Trigger__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template to remind about end date of assigned project.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Reminder of End Date</name>
+    <style>none</style>
+    <subject>Project Deadline Reminder</subject>
+    <textOnly>Hello,
+
+A new project with code &quot;{!Project_Detail__c.Name}&quot; assigned to you needs to be finished on {!Project_Detail__c.End_Date__c}.
+
+Thank you.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

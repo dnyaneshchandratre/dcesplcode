@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Address__c</fullName>
+        <description>Holds the address of the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the address of the employee.</inlineHelpText>
+        <label>Address</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Age__c</fullName>
+        <description>Calculates the age of the employee automatically.</description>
+        <externalId>false</externalId>
+        <formula>YEAR(Today())  -  YEAR(Date_of_Birth__c)</formula>
+        <inlineHelpText>Calculates the age of the employee automatically.</inlineHelpText>
+        <label>Age</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Annual_CTC__c</fullName>
+        <description>The annual cost to the company for the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the annual CTC for the employee.</inlineHelpText>
+        <label>Annual CTC</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <description>The city of the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the city of the employee.</inlineHelpText>
+        <label>City</label>
+        <picklist>
+            <controllingField>State__c</controllingField>
+            <picklistValues>
+                <fullName>Bhopal</fullName>
+                <default>false</default>
+                <controllingFieldValues>Madhya Pradesh</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gandhi Nagar</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gujarat</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Guntur</fullName>
+                <default>false</default>
+                <controllingFieldValues>Andhra Pradesh</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+                <controllingFieldValues>Andhra Pradesh</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+                <controllingFieldValues>Maharashtra</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pune</fullName>
+                <default>false</default>
+                <controllingFieldValues>Maharashtra</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Surat</fullName>
+                <default>false</default>
+                <controllingFieldValues>Gujarat</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Current_Employee__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked to true if the employee is a current employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check the box true if the employee is a current employee.</inlineHelpText>
+        <label>Current Employee</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <description>Holds the date of birth of the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date of birth of the employee.</inlineHelpText>
+        <label>Date of Birth</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Joining__c</fullName>
+        <description>Holds the date when the employee joined the company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date when the employee joined the company.</inlineHelpText>
+        <label>Date of Joining</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Department__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Holds the department ID for the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the appropriate department ID for the employee.</inlineHelpText>
+        <label>Department</label>
+        <referenceTo>Department__c</referenceTo>
+        <relationshipLabel>Employees</relationshipLabel>
+        <relationshipName>Employees</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Education__c</fullName>
+        <description>Holds the educational qualification of the fresher employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the educational qualification of the fresher employee.</inlineHelpText>
+        <label>Education</label>
+        <picklist>
+            <picklistValues>
+                <fullName>BE</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B Tech.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MCA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BCA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>B Sc.</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>First_Name__c</fullName>
+        <description>Holds the first name of the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the first name of the employee.</inlineHelpText>
+        <label>First Name</label>
+        <length>50</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Name__c</fullName>
+        <description>Full name of the employee is automatically populated in this field.</description>
+        <externalId>false</externalId>
+        <formula>First_Name__c  &amp; &quot; &quot; &amp; Last_Name__c</formula>
+        <inlineHelpText>Full name of the employee is automatically populated in this field.</inlineHelpText>
+        <label>Full Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Check this box if the employee is active.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the employee is active.</inlineHelpText>
+        <label>Is Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_on_Notice_Period__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Check this box if the employee is on notice period.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Check this box if the employee is on notice period.</inlineHelpText>
+        <label>Is on Notice Period</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Name__c</fullName>
+        <description>Holds the last name of the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the last name of the employee.</inlineHelpText>
+        <label>Last Name</label>
+        <length>50</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Working_Day__c</fullName>
+        <description>This date is automatically calculated based on resignation date.</description>
+        <externalId>false</externalId>
+        <formula>Resignation_Date__c + 60</formula>
+        <inlineHelpText>This date is automatically calculated based on resignation date.</inlineHelpText>
+        <label>Last Working Day</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Holds the manager ID for the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the appropriate manager ID for the employee.</inlineHelpText>
+        <label>Manager</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Employee_4__c.Role__r.Name</field>
+                <operation>equals</operation>
+                <value></value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Employee_4__c</referenceTo>
+        <relationshipLabel>Employees</relationshipLabel>
+        <relationshipName>Employees</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Comapny_2__c</fullName>
+        <description>Holds name of second most recent company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter name of second most recent company.</inlineHelpText>
+        <label>Previous Comapny - 2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Company_1__c</fullName>
+        <description>Holds name of most recent company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter name of most recent company.</inlineHelpText>
+        <label>Previous Company - 1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Salary__c</fullName>
+        <description>Holds salary in most recent company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter salary in most recent company.</inlineHelpText>
+        <label>Previous Salary</label>
+        <precision>12</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Resignation_Date__c</fullName>
+        <description>Holds the date of resignation of the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the date of resignation of the employee.</inlineHelpText>
+        <label>Resignation Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Holds the role of the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide the role of the employee from the lookup.</inlineHelpText>
+        <label>Role</label>
+        <referenceTo>Role__c</referenceTo>
+        <relationshipLabel>Employees</relationshipLabel>
+        <relationshipName>Employees</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SSN__c</fullName>
+        <description>Holds the social security number.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the social security number of the employee.</inlineHelpText>
+        <label>SSN</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Salary_Credited_Till_Date__c</fullName>
+        <description>Automatically calculates total salary credited to the employee till date.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Automatically calculates total salary credited to the employee till date.</inlineHelpText>
+        <label>Salary Credited Till Date</label>
+        <summarizedField>Salary__c.Gross_Salary__c</summarizedField>
+        <summaryForeignKey>Salary__c.Employee__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Skills__c</fullName>
+        <description>Skills possessed by the employee.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the skills possessed by the employee.</inlineHelpText>
+        <label>Skills</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Apex</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C#</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dot Net</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Force.com</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Java</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PHP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Project Planning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <description>Holds the state in which employee lives.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the state in which employee lives.</inlineHelpText>
+        <label>State</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Andhra Pradesh</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>Red Flag: Inactive.
+Yellow Flag: On notice period.
+Green Flag: Active.</description>
+        <externalId>false</externalId>
+        <formula>IF(
+  AND(Is_Active__c == TRUE,Is_on_Notice_Period__c == FALSE),
+  IMAGE( &quot;/img/samples/flag_green.gif&quot;,&quot;Employee is active.&quot; ) ,  
+  IF( 
+    AND(Is_Active__c == TRUE,Is_on_Notice_Period__c == TRUE), 
+    IMAGE( &quot;/img/samples/flag_yellow.gif&quot;,&quot;Employee is currently on notice period.&quot;)  ,
+    IF( 
+      AND(Is_Active__c == FALSE,Is_on_Notice_Period__c == TRUE),  
+      NULL,
+      IMAGE( &quot;/img/samples/flag_red.gif&quot;,&quot;Employee is currently inactive.&quot;)
+    ) 
+  )
+)</formula>
+        <inlineHelpText>Red Flag: Inactive.
+Yellow Flag: On notice period.
+Green Flag: Active.</inlineHelpText>
+        <label>Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Street__c</fullName>
+        <description>Holds the street on which the employee lives.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Enter the street on which the employee lives.</inlineHelpText>
+        <label>Street</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Experience__c</fullName>
+        <description>Calculates the total experience for the experienced employee.</description>
+        <externalId>false</externalId>
+        <formula>VALUE( TEXT(Years_of_Experience_1__c )) + VALUE (TEXT(Years_of_Experience_2__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Calculates the total experience for the experienced employee.</inlineHelpText>
+        <label>Total Experience</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unique_Role__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Unique field for One-to-One relationship.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>Unique field for One-to-One relationship.</inlineHelpText>
+        <label>Unique Role</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Years_of_Experience_1__c</fullName>
+        <description>Holds the experience in years in most recent company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the experience in years in most recent company.</inlineHelpText>
+        <label>Years of Experience - 1</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Years_of_Experience_2__c</fullName>
+        <description>Holds the experience in years in most recent company.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select the experience in years in most recent company.</inlineHelpText>
+        <label>Years of Experience - 2</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Years_of_Experience_on_Salesforce__c</fullName>
+        <externalId>false</externalId>
+        <label>Years of Experience on Salesforce</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ZIP__c</fullName>
+        <externalId>false</externalId>
+        <label>ZIP</label>
+        <length>6</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Employee</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Active</fullName>
+        <columns>NAME</columns>
+        <columns>First_Name__c</columns>
+        <columns>Last_Name__c</columns>
+        <columns>Date_of_Joining__c</columns>
+        <columns>Last_Working_Day__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Inactive</fullName>
+        <columns>NAME</columns>
+        <columns>First_Name__c</columns>
+        <columns>Last_Name__c</columns>
+        <columns>Date_of_Joining__c</columns>
+        <columns>Last_Working_Day__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_Active__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Is_on_Notice_Period__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Inactive</label>
+        <sharedTo>
+            <role>HR_Manager</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Notice_Period</fullName>
+        <columns>NAME</columns>
+        <columns>First_Name__c</columns>
+        <columns>Last_Name__c</columns>
+        <columns>Date_of_Joining__c</columns>
+        <columns>Last_Working_Day__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Is_on_Notice_Period__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Notice Period</label>
+        <sharedTo>
+            <role>HR_Manager</role>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>EMP-{000000}</displayFormat>
+        <label>Employee ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Employees</pluralLabel>
+    <recordTypes>
+        <fullName>Experienced</fullName>
+        <active>true</active>
+        <label>Experienced</label>
+        <picklistValues>
+            <picklist>City__c</picklist>
+            <values>
+                <fullName>Bhopal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gandhi Nagar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guntur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surat</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Education__c</picklist>
+            <values>
+                <fullName>B Sc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B Tech%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BE</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>MCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Skills__c</picklist>
+            <values>
+                <fullName>Apex</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>C%23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dot Net</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Java</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>Andhra Pradesh</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_1__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_2__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_on_Salesforce__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Fresher</fullName>
+        <active>true</active>
+        <label>Fresher</label>
+        <picklistValues>
+            <picklist>City__c</picklist>
+            <values>
+                <fullName>Bhopal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gandhi Nagar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guntur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surat</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Education__c</picklist>
+            <values>
+                <fullName>B Sc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B Tech%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BE</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>MCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Skills__c</picklist>
+            <values>
+                <fullName>Apex</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>C%23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dot Net</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Java</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>Andhra Pradesh</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_1__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_2__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_on_Salesforce__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Non_Technical</fullName>
+        <active>true</active>
+        <description>Non-technical employees.</description>
+        <label>Non-Technical</label>
+        <picklistValues>
+            <picklist>City__c</picklist>
+            <values>
+                <fullName>Bhopal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gandhi Nagar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guntur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surat</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Education__c</picklist>
+            <values>
+                <fullName>B Sc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B Tech%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BE</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>MCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Skills__c</picklist>
+            <values>
+                <fullName>HR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Operations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Project Planning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>QA</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>Andhra Pradesh</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_1__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_2__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_on_Salesforce__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Technical</fullName>
+        <active>true</active>
+        <description>Technical employees.</description>
+        <label>Technical</label>
+        <picklistValues>
+            <picklist>City__c</picklist>
+            <values>
+                <fullName>Bhopal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gandhi Nagar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guntur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hyderabad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pune</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surat</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Education__c</picklist>
+            <values>
+                <fullName>B Sc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>B Tech%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BE</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>MCA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Skills__c</picklist>
+            <values>
+                <fullName>Apex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C%23</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dot Net</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Force%2Ecom</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Java</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PHP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salesforce</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State__c</picklist>
+            <values>
+                <fullName>Andhra Pradesh</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Gujarat</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Madhya Pradesh</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maharashtra</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_1__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_2__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Years_of_Experience_on_Salesforce__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Age_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF($Setup.ValidationSetting__c.Validations__c  == TRUE,
+    TRUE,
+    IF(AND(Age__c &lt; 21, Age__c &gt; 30),    
+        TRUE,
+        FALSE
+    )
+)</errorConditionFormula>
+        <errorDisplayField>Date_of_Birth__c</errorDisplayField>
+        <errorMessage>Please provide a valid Date of birth. Employee cannot be less than 18 years of Age.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Last_Working_Day</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( 
+OR(Date_of_Joining__c &gt;  Last_Working_Day__c, Resignation_Date__c &gt; Last_Working_Day__c), 
+TRUE, 
+FALSE)</errorConditionFormula>
+        <errorMessage>Last working day cannot be before resignation date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Notice_Period_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF( 
+   AND(Is_Active__c == FALSE,Is_on_Notice_Period__c == TRUE), 
+   TRUE, 
+   FALSE
+)</errorConditionFormula>
+        <errorDisplayField>Is_Active__c</errorDisplayField>
+        <errorMessage>The employee cannot be inactive in notice period.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Resignation_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(
+    Date_of_Joining__c  &gt;  Resignation_Date__c ,
+   TRUE,
+   FALSE)</errorConditionFormula>
+        <errorDisplayField>Resignation_Date__c</errorDisplayField>
+        <errorMessage>Employee cannot resign before joining.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Resignation_Date_Status</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(
+    AND(Is_on_Notice_Period__c == TRUE, TEXT(Resignation_Date__c) == NULL),
+   TRUE,
+   FALSE
+)</errorConditionFormula>
+        <errorDisplayField>Resignation_Date__c</errorDisplayField>
+        <errorMessage>You need to enter a resignation date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Resignation_Status</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(
+    AND(Is_on_Notice_Period__c == FALSE, TEXT(Resignation_Date__c) &lt;&gt; NULL),
+   TRUE,
+   FALSE
+)</errorConditionFormula>
+        <errorDisplayField>Resignation_Date__c</errorDisplayField>
+        <errorMessage>The &quot;Is on Notice Period&quot; checkbox should be checked in order to enter resignation date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>SSN_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>LEN( TEXT(SSN__c )) &lt;&gt; 10</errorConditionFormula>
+        <errorDisplayField>SSN__c</errorDisplayField>
+        <errorMessage>Invalid Value in SSN.</errorMessage>
+    </validationRules>
+</CustomObject>

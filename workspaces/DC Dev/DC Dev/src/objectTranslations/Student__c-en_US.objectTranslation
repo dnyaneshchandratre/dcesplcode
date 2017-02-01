@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Student</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Students</value>
+    </caseValues>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Course Applied For --></label>
+        <name>Course_Applied_For__c</name>
+        <picklistValues>
+            <masterLabel>B.Arch.</masterLabel>
+            <translation><!-- B.Arch. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B.C.A.</masterLabel>
+            <translation><!-- B.C.A. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B.E.</masterLabel>
+            <translation><!-- B.E. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M.C.A.</masterLabel>
+            <translation><!-- M.C.A. --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation><!-- Female --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation><!-- Male --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- H.S.C.% --></label>
+        <name>HSC__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roll Number --></label>
+        <name>Roll_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- S.S.C. % --></label>
+        <name>SSC__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

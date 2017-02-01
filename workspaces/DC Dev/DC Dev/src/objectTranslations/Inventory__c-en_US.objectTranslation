@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inventory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventories</value>
+    </caseValues>
+    <fields>
+        <help><!-- Provide media information. --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter the name of the media --></help>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter the cost for one copy of media. --></help>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter number from 0 to 999. --></help>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select appropriate type of media. --></help>
+        <label><!-- Type of Media --></label>
+        <name>Type_of_Media__c</name>
+        <picklistValues>
+            <masterLabel>Audio Book</masterLabel>
+            <translation><!-- Audio Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Book</masterLabel>
+            <translation><!-- Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Book</masterLabel>
+            <translation><!-- E-Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magazine</masterLabel>
+            <translation><!-- Magazine --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Inventory Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

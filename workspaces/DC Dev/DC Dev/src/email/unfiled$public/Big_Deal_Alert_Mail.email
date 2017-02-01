@@ -1,0 +1,7 @@
+<h1> <color="red"><center>Big Deal Alert!</center></color="red"></h1> 
+<br><br>
+Hello,
+<br><br>
+It gives us immense pleasure to notify you that a big deal of <em>{!Opportunity.Amount}</em> is being created for your account with ID {!Opportunity.AccountId}.
+<br><br>
+Thank you!

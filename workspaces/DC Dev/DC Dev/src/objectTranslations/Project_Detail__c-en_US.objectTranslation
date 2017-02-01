@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project Detail</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Project Details</value>
+    </caseValues>
+    <fields>
+        <help><!-- Relates a project to the client. --></help>
+        <label><!-- Client --></label>
+        <name>Client__c</name>
+        <relationshipLabel><!-- Project Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Enter the end date (Deadline) of the project. --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Implementation Type --></label>
+        <name>Implementation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Enhancements</masterLabel>
+            <translation><!-- Enhancements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enterprise Services</masterLabel>
+            <translation><!-- Enterprise Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Development</masterLabel>
+            <translation><!-- Product Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support</masterLabel>
+            <translation><!-- Support --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Relates the project to its manager. --></help>
+        <label><!-- Manager --></label>
+        <lookupFilter>
+            <errorMessage><!-- Only Project Managers can be assigned for this purpose. --></errorMessage>
+        </lookupFilter>
+        <name>Manager__c</name>
+        <relationshipLabel><!-- Project Details --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Provide some description about the project. --></help>
+        <label><!-- Project Description --></label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide the starting date of the project. --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Project Detail Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Department Details --></label>
+            <section>Department Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <workflowTasks>
+        <description><!-- A new project is assigned to the manager. --></description>
+        <name>Project_Assignment</name>
+        <subject><!-- Project Assignment --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

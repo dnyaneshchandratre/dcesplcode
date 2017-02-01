@@ -1,0 +1,5 @@
+<br>Hello,
+<br><br>
+A new project with code <em>"{!Project_Detail__c.Name}"</em> has been assigned to you and it starts on {!Project_Detail__c.Start_Date__c}.<br><br>
+
+Thank you.

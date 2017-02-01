@@ -1,0 +1,19 @@
+{
+    "session_id": "00D28000000cFto!ARMAQMYVb2SJuAch.PyR6BrxRQKO7At4lG3XQMkJLay8pgtXDlbFCymrgQcDn6jh5gb3NBiopsgLWkTPRufDnBUV6Ev1ouJm", 
+    "instance_url": "https://ap2.salesforce.com", 
+    "user_id": "00528000000Sv8DAAS", 
+    "success": true, 
+    "metadata_url": "https://ap2.salesforce.com/services/Soap/m/37.0", 
+    "partner_url": "https://ap2.salesforce.com/services/Soap/u/37.0", 
+    "rest_url": "https://ap2.salesforce.com/services/data/v37.0", 
+    "time_stamp": "2017-02-01 12:38:08", 
+    "server_url": "https://ap2.salesforce.com/services/Soap/u/5.0/00D28000000cFto", 
+    "headers": {
+        "Content-Type": "application/json; charset=UTF-8", 
+        "Accept": "application/json", 
+        "Authorization": "OAuth 00D28000000cFto!ARMAQMYVb2SJuAch.PyR6BrxRQKO7At4lG3XQMkJLay8pgtXDlbFCymrgQcDn6jh5gb3NBiopsgLWkTPRufDnBUV6Ev1ouJm"
+    }, 
+    "X-SFDC-Session": "00D28000000cFto!ARMAQMYVb2SJuAch.PyR6BrxRQKO7At4lG3XQMkJLay8pgtXDlbFCymrgQcDn6jh5gb3NBiopsgLWkTPRufDnBUV6Ev1ouJm", 
+    "project name": "DC Dev", 
+    "apex_url": "https://ap2.salesforce.com/services/Soap/s/37.0"
+}

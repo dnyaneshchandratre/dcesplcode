@@ -1,0 +1,106 @@
+<apex:page standardController="Invoice_Statement__c"
+           standardStylesheets="false"
+           showHeader="false"
+           renderAs="pdf"
+           sidebar="false"
+           applyHtmlTag="false"
+           applyBodyTag="false"
+           docType="html-5.0">
+
+    <apex:stylesheet value="{!URLFOR($Resource.Css, '/CSS/InvoicePage.css')}"/>
+
+    <html>
+        <head>
+        </head>
+        <body>
+            <div class="HeaderText"> 
+                <apex:outputText value="INVOICE" />
+            </div>
+            <div>
+                <h2>ABC Containers</h2>
+                76th Street,<br />
+                Los Angeles, CA 85540<br />
+                Phone: (898) 999-8989
+                <apex:pageBlock >
+                        <table class = "RightTable">
+                            <tr>
+                                <th>INVOICE #</th>
+                                <th>DATE</th>
+                            </tr>
+                            <tr>
+                                <td>{!Invoice_Statement__c.Name}</td>
+                                <td class = "largedata">
+                                    <apex:outputText value="{0,date,MM'/'dd'/'yyyy}">
+                                        <apex:param value="{!Invoice_Statement__c.CreatedDate}" /> 
+                                    </apex:outputText>
+                                </td>
+                            </tr>
+                        </table>
+                </apex:pageBlock>
+            </div>
+            <div>
+            <table>
+                <tr>
+                    <th>BILL TO</th>
+                </tr>
+            </table>
+            &nbsp;&nbsp;{!Invoice_Statement__c.Customer_Name__c}<br />
+            &nbsp;&nbsp;{!Invoice_Statement__c.Company_Name__c}<br />
+            &nbsp;&nbsp;{!Invoice_Statement__c.Street_Address__c}<br />
+            &nbsp;&nbsp;{!Invoice_Statement__c.City__c},
+                        &nbsp;{!Invoice_Statement__c.State__c}
+                        &nbsp;{!Invoice_Statement__c.ZIP__c}<br />
+            &nbsp;&nbsp;{!Invoice_Statement__c.Phone__c}<br />
+            &nbsp;&nbsp;{!Invoice_Statement__c.Email_Address__c}<br />
+            </div>
+            <br /><br /><br /><br />
+            <div>
+                <table class = "DescriptionTable">
+                <colgroup>
+                    <col width="60%" />
+                    <col width="20%" />
+                    <col width="20%" />
+                </colgroup>
+                    <tr>
+                        <th colspan = "2">Description</th>
+                        <th>Amount</th>
+                    </tr>
+                    <apex:repeat value="{!Invoice_Statement__c.Line_Items1__r}"
+                                 var="relatedLineItem">
+                        <tr class = "noBorders">
+                            <td colspan = "2">
+                                {!relatedLineItem.Merchandise_Name__c}
+                            </td>
+                            <td>
+                                {!relatedLineItem.Amount__c}
+                            </td>
+                        </tr>
+                    </apex:repeat>
+                    <tr >
+                        <td colspan = "2"> Discount: {!Invoice_Statement__c.Discount__c}% </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style = "text-align:center;">
+                            <i>Thank you for your business!</i>
+                        </td>
+                        <td style = "text-align:center;">
+                            TOTAL
+                        </td>
+                        <td style = "text-align:center;">
+                            {!Invoice_Statement__c.Final_Amount__c}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br /><br /><br /><br /><br />
+            <div class = "footer">
+                If you have any queries about this invoice, please contact: <br />
+                ABC Containers<br />
+                76th Street, Los Angeles, CA 85540<br />
+                Phone: (898) 999-8989
+                Email: support@abc.com
+            </div>
+        </body>
+    </html>
+</apex:page>

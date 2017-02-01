@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>dnyanesh.chandratre@eternussolutions.com</contactEmail>
+    <iconUrl>https://login.salesforce.com/logos/Salesforce/EnvironmentHub/icon.png</iconUrl>
+    <label>Rest Demo</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/EnvironmentHub/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/oauth2/callback</callbackUrl>
+        <consumerKey>3MVG9ZL0ppGP5UrA4kbIf5aVMUR8E83K9UaBo06fqL4vJgjfr78hES.lc6DsUT3gxsovztbdRr1dsyCopyESc</consumerKey>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <startUrl>https://ap2.salesforce/com/001/e</startUrl>
+</ConnectedApp>
